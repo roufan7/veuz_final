@@ -221,7 +221,7 @@ const ListView = ({ setView, setCurrentStep, setGitex }) => {
         ))}
       </div>
 
-      <img src={HeaderImage} classNa me="w-full" alt="Footer banner" />
+      <img src={HeaderImage} className="w-full" alt="Footer banner" />
       <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-[#299D3F] to-[#123F22] py-4 px-10 z-10">
         <div className="flex items-center gap-4 justify-end">
           <p className="text-white font-semibold text-sm">
