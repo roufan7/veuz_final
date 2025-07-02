@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import HeaderImage from "../assets/images/page_header.png";
 import CardBg1 from "../assets/images/edited_card_bg_1.png";
 import CardLogo from "../assets/images/card_logo.png";
-import strike from '../assets/images/vector.png'
+import strike from '../assets/images/strike.png'
 
 
 const ticketData = [
