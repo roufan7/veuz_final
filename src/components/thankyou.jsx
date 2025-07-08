@@ -2,7 +2,7 @@ import React from 'react';
 import BgImage from '../assets/images/thanks_bg.png'
 import HeaderImage from '../assets/images/page_header.png'
 
-const ThankYouPage = ({ setView }) => {
+const ThankYouPage = ({ setView, formik }) => {
     return (
         <div className="min-h-screen bg-cover" style={{ backgroundImage: `url('${BgImage}')` }}>
             <img src={HeaderImage} className="w-full" alt="Top banner" />
@@ -19,7 +19,7 @@ const ThankYouPage = ({ setView }) => {
                             A Confirmation Email With Your Event Details Will Be Sent To You Shortly. (Please Check Your Inbox And Spam Folder)
                         </p>
 
-                        <button className="bg-[#008000] cursor-pointer text-white px-6 py-2 rounded-md text-sm font-semibold" onClick={() => setView('LIST')}>
+                        <button className="bg-[#008000] cursor-pointer text-white px-6 py-2 rounded-md text-sm font-semibold" onClick={() => { setView('LIST'); formik.resetForm() }}>
                             Return To Homepage
                         </button>
                     </div>
